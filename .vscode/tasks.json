@@ -210,7 +210,7 @@
       "type": "shell"
     },
     {
-      "command": "pnpm update",
+      "command": "pnpm up --latest",
       "detail": "Updates all project dependencies to their latest compatible versions.",
       "group": "none",
       "label": "pnpm > update",
