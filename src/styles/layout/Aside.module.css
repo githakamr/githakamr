@@ -1,0 +1,149 @@
+.Aside {
+  min-width: var(--size-110);
+  max-width: var(--size-110);
+  width: var(--size-110);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-inline-end: var(--size-4);
+  background-color: var(--color-secondary);
+  border-right: 1px solid var(--color-highlight);
+  height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
+  overflow-y: scroll !important;
+}
+
+@media (max-width: 256px) {
+  .Aside {
+    padding-inline-start: var(--size-4);
+    width: calc(100vw - var(--size-4) - var(--size-4));
+  }
+}
+
+@media (min-width: 256px) and (max-width: 384px) {
+  .Aside {
+    padding-inline-start: var(--size-8);
+    width: calc(100vw - var(--size-8) - var(--size-4));
+  }
+}
+
+@media (min-width: 384px) and (max-width: 512px) {
+  .Aside {
+    padding-inline-start: var(--size-12);
+    width: calc(100vw - var(--size-12) - var(--size-4));
+  }
+}
+
+@media (min-width: 512px) and (max-width: 768px) {
+  .Aside {
+    padding-inline-start: var(--size-16);
+    width: calc(100vw - var(--size-16) - var(--size-4));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Aside {
+    padding-inline-start: var(--size-20);
+    width: calc(100vw - var(--size-20) - var(--size-4));
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1536px) {
+  .Aside {
+    padding-inline-start: var(--size-24);
+    width: calc(100vw - var(--size-24) - var(--size-4));
+  }
+}
+
+@media (min-width: 1536px) and (max-width: 1920px) {
+  .Aside {
+    padding-inline-start: var(--size-28);
+    width: calc(100vw - var(--size-28) - var(--size-4));
+  }
+}
+
+@media (min-width: 1920px) and (max-width: 2304px) {
+  .Aside {
+    padding-inline-start: var(--size-32);
+    width: calc(100vw - var(--size-32) - var(--size-4));
+  }
+}
+
+@media (min-width: 2304px) {
+  .Aside {
+    padding-inline-start: calc(var(--size-36) + (100vw - var(--size-1152)) / 2);
+    width: calc(
+      100vw - calc(var(--size-36) + (100vw - var(--size-1152)) / 2) -
+        var(--size-4)
+    );
+  }
+}
+
+.AsideOverlay {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .Shell {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .AsideOverlay {
+    display: block;
+    flex-grow: 1;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-transparent);
+  }
+}
+
+.Header {
+  height: var(--size-32);
+  min-height: var(--size-32);
+  max-height: var(--size-32);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  margin-top: var(--size-32);
+  gap: var(--size-32);
+}
+
+.AsideContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-grow: 1;
+  width: 100%;
+  gap: var(--size-32);
+  background-color: transparent;
+}
+
+.Footer {
+  height: var(--size-32);
+  min-height: var(--size-32);
+  max-height: var(--size-32);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}

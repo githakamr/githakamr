@@ -1,0 +1,10 @@
+.Footer {
+  height: var(--size-32);
+  min-height: var(--size-32);
+  max-height: var(--size-32);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}

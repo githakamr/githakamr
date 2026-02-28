@@ -12,6 +12,7 @@
   "prettier.jsxSingleQuote": true,
   "prettier.singleAttributePerLine": true,
   "prettier.singleQuote": true,
+  "typescript.preferences.importModuleSpecifier": "non-relative",
   "workbench.colorTheme": "GitHub Dark Colorblind (Beta)",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "right"
