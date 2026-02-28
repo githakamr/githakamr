@@ -1,0 +1,122 @@
+.Header {
+  height: var(--size-32);
+  min-height: var(--size-32);
+  max-height: var(--size-32);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Page {
+  box-sizing: border-box;
+  background-color: var(--color-secondary);
+  border-bottom: 1px solid var(--color-highlight);
+  width: 100%;
+}
+
+.Dashboard {
+  padding-inline-start: var(--size-4);
+}
+
+@media (max-width: 256px) {
+  .Page {
+    padding-inline: var(--size-4);
+  }
+
+  .Dashboard {
+    padding-inline: var(--size-4);
+    width: calc(100% - var(--size-4) - var(--size-4));
+  }
+}
+
+@media (min-width: 256px) and (max-width: 384px) {
+  .Page {
+    padding-inline: var(--size-8);
+  }
+
+  .Dashboard {
+    padding-inline: var(--size-8);
+    width: calc(100% - var(--size-8) - var(--size-8));
+  }
+}
+
+@media (min-width: 384px) and (max-width: 512px) {
+  .Page {
+    padding-inline: var(--size-12);
+  }
+
+  .Dashboard {
+    padding-inline: var(--size-12);
+    width: calc(100% - var(--size-12) - var(--size-12));
+  }
+}
+
+@media (min-width: 512px) and (max-width: 768px) {
+  .Page {
+    padding-inline: var(--size-16);
+  }
+
+  .Dashboard {
+    padding-inline: var(--size-16);
+    width: calc(100% - var(--size-16) - var(--size-16));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Page {
+    padding-inline: var(--size-20);
+  }
+
+  .Dashboard {
+    padding-inline-end: var(--size-20);
+    width: calc(100% - var(--size-20) - var(--size-4));
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1536px) {
+  .Page {
+    padding-inline: var(--size-24);
+  }
+
+  .Dashboard {
+    padding-inline-end: var(--size-24);
+    width: calc(100% - var(--size-24) - var(--size-4));
+  }
+}
+
+@media (min-width: 1536px) and (max-width: 1920px) {
+  .Page {
+    padding-inline: var(--size-28);
+  }
+
+  .Dashboard {
+    padding-inline-end: var(--size-28);
+    width: calc(100% - var(--size-28) - var(--size-4));
+  }
+}
+
+@media (min-width: 1920px) and (max-width: 2304px) {
+  .Page {
+    padding-inline: var(--size-32);
+  }
+
+  .Dashboard {
+    padding-inline-end: var(--size-32);
+    width: calc(100% - var(--size-32) - var(--size-4));
+  }
+}
+
+@media (min-width: 2304px) {
+  .Page {
+    padding-inline: calc(var(--size-36) + (100% - var(--size-1152)) / 2);
+  }
+
+  .Dashboard {
+    padding-inline-end: calc(var(--size-36) + (100vw - var(--size-1152)) / 2);
+    width: calc(
+      100% - calc(var(--size-36) + (100vw - var(--size-1152)) / 2) -
+        var(--size-4)
+    );
+  }
+}
